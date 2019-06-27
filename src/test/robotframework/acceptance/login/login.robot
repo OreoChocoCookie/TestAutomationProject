@@ -1,10 +1,11 @@
 *** Settings ***
 Library           SeleniumLibrary
+Resource          login-resources.robot
 
 *** Test Cases ***
 Verify Login UI
     [Tags]  regression
-    Open Browser To Login Page
+    Open Browser To Login Page - test
     Email and Password Text Fields Should Be Displayed
     Login Button Should Be Displayed
     Forgot Password Link Should Be Displayed
@@ -15,8 +16,6 @@ Verify Login Functionality
   Valid Login
   Error Message Should Be Displayed on Invalid Login
   [Teardown]  Close Browser
-
-
 
 
 *** Keywords ***
@@ -38,13 +37,7 @@ Social Media Buttons Should Displayed
       Element Should Be Visible     id=fb
       Element Should Be Visible     id=ggl
 
-Error Message Should Be Displayed on Invalid Login
-  Go To     https://dv01.travelbook.ph/users/login/
-  Input Email      invalidusername@gmail.com
-  Input Password   invalidPassword
-  Click Login Button
-  ${status}   ${value}  Run Keyword And Ignore Error   Element Should Be Visible   css=.errorMessage1
-  Element Text Should Be      css=.errorMessage div    Not recognized. Email address or password is incorrect.
+
 
 Valid Login
   Input Email    hannoj@gmail.com
