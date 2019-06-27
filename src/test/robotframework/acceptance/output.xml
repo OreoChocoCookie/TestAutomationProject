@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190626 19:05:09.135" generator="Robot 3.1.2 (Python 2.7.16 on win32)">
+<robot rpa="false" generated="20190626 19:18:42.047" generator="Robot 3.1.2 (Python 2.7.16 on win32)">
 <suite source="C:\Users\jonnah.orias\travelbookauto\src\test\robotframework\acceptance\login.robot" id="s1" name="Login">
-<test id="s1-t1" name="Verify Login UI">
+<test id="s1-t1" name="/*Verify Login UI">
 <kw name="Open Browser To Login Page">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -9,18 +9,18 @@
 <arg>https://dv01.travelbook.ph</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20190626 19:05:10.908" level="INFO">Opening browser 'chrome' to base url 'https://dv01.travelbook.ph'.</msg>
-<status status="PASS" endtime="20190626 19:05:19.695" starttime="20190626 19:05:10.908"></status>
+<msg timestamp="20190626 19:18:43.909" level="INFO">Opening browser 'chrome' to base url 'https://dv01.travelbook.ph'.</msg>
+<status status="PASS" endtime="20190626 19:18:52.374" starttime="20190626 19:18:43.909"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>css=div.main-header a[href="https://dv01.travelbook.ph/users/login/"]</arg>
 </arguments>
-<msg timestamp="20190626 19:05:19.696" level="INFO">Clicking element 'css=div.main-header a[href="https://dv01.travelbook.ph/users/login/"]'.</msg>
-<status status="PASS" endtime="20190626 19:05:21.330" starttime="20190626 19:05:19.695"></status>
+<msg timestamp="20190626 19:18:52.375" level="INFO">Clicking element 'css=div.main-header a[href="https://dv01.travelbook.ph/users/login/"]'.</msg>
+<status status="PASS" endtime="20190626 19:18:54.718" starttime="20190626 19:18:52.375"></status>
 </kw>
-<status status="PASS" endtime="20190626 19:05:21.330" starttime="20190626 19:05:10.907"></status>
+<status status="PASS" endtime="20190626 19:18:54.719" starttime="20190626 19:18:43.909"></status>
 </kw>
 <kw name="Email and Password Text Fields Should Be Displayed">
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
@@ -28,18 +28,18 @@
 <arguments>
 <arg>id=inputEmail1</arg>
 </arguments>
-<msg timestamp="20190626 19:05:21.375" level="INFO">Element 'id=inputEmail1' is displayed.</msg>
-<status status="PASS" endtime="20190626 19:05:21.375" starttime="20190626 19:05:21.331"></status>
+<msg timestamp="20190626 19:18:54.762" level="INFO">Element 'id=inputEmail1' is displayed.</msg>
+<status status="PASS" endtime="20190626 19:18:54.762" starttime="20190626 19:18:54.719"></status>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
 <arguments>
 <arg>id=inputPassword1</arg>
 </arguments>
-<msg timestamp="20190626 19:05:21.427" level="INFO">Element 'id=inputPassword1' is displayed.</msg>
-<status status="PASS" endtime="20190626 19:05:21.428" starttime="20190626 19:05:21.375"></status>
+<msg timestamp="20190626 19:18:54.822" level="INFO">Element 'id=inputPassword1' is displayed.</msg>
+<status status="PASS" endtime="20190626 19:18:54.822" starttime="20190626 19:18:54.762"></status>
 </kw>
-<status status="PASS" endtime="20190626 19:05:21.428" starttime="20190626 19:05:21.331"></status>
+<status status="PASS" endtime="20190626 19:18:54.822" starttime="20190626 19:18:54.719"></status>
 </kw>
 <kw name="Login Button Should Be Displayed">
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
@@ -47,10 +47,10 @@
 <arguments>
 <arg>css=input[type="submit"]</arg>
 </arguments>
-<msg timestamp="20190626 19:05:21.480" level="INFO">Element 'css=input[type="submit"]' is displayed.</msg>
-<status status="PASS" endtime="20190626 19:05:21.481" starttime="20190626 19:05:21.429"></status>
+<msg timestamp="20190626 19:18:54.873" level="INFO">Element 'css=input[type="submit"]' is displayed.</msg>
+<status status="PASS" endtime="20190626 19:18:54.873" starttime="20190626 19:18:54.823"></status>
 </kw>
-<status status="PASS" endtime="20190626 19:05:21.481" starttime="20190626 19:05:21.428"></status>
+<status status="PASS" endtime="20190626 19:18:54.874" starttime="20190626 19:18:54.822"></status>
 </kw>
 <kw name="Forgot Password Link Should Be Displayed">
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
@@ -58,65 +58,52 @@
 <arguments>
 <arg>css=a[data-target="#forgotPasswordDialog"]</arg>
 </arguments>
-<msg timestamp="20190626 19:05:21.515" level="INFO">Element 'css=a[data-target="#forgotPasswordDialog"]' is displayed.</msg>
-<status status="PASS" endtime="20190626 19:05:21.515" starttime="20190626 19:05:21.482"></status>
+<msg timestamp="20190626 19:18:54.946" level="INFO">Element 'css=a[data-target="#forgotPasswordDialog"]' is displayed.</msg>
+<status status="PASS" endtime="20190626 19:18:54.947" starttime="20190626 19:18:54.874"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>css=a[data-target="#forgotPasswordDialog"]</arg>
 </arguments>
-<msg timestamp="20190626 19:05:21.515" level="INFO">Clicking element 'css=a[data-target="#forgotPasswordDialog"]'.</msg>
-<status status="PASS" endtime="20190626 19:05:21.598" starttime="20190626 19:05:21.515"></status>
+<msg timestamp="20190626 19:18:54.947" level="INFO">Clicking element 'css=a[data-target="#forgotPasswordDialog"]'.</msg>
+<status status="PASS" endtime="20190626 19:18:55.052" starttime="20190626 19:18:54.947"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>id=forgotPasswordContent</arg>
 </arguments>
-<status status="PASS" endtime="20190626 19:05:24.035" starttime="20190626 19:05:21.599"></status>
+<status status="PASS" endtime="20190626 19:18:55.344" starttime="20190626 19:18:55.053"></status>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
 <arguments>
 <arg>id=forgotPasswordContent</arg>
 </arguments>
-<msg timestamp="20190626 19:05:24.057" level="INFO">Element 'id=forgotPasswordContent' is displayed.</msg>
-<status status="PASS" endtime="20190626 19:05:24.057" starttime="20190626 19:05:24.035"></status>
+<msg timestamp="20190626 19:18:55.371" level="INFO">Element 'id=forgotPasswordContent' is displayed.</msg>
+<status status="PASS" endtime="20190626 19:18:55.371" starttime="20190626 19:18:55.344"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>id=forgotPasswordDialog</arg>
 </arguments>
-<msg timestamp="20190626 19:05:24.058" level="INFO">Clicking element 'id=forgotPasswordDialog'.</msg>
-<status status="PASS" endtime="20190626 19:05:24.386" starttime="20190626 19:05:24.058"></status>
+<msg timestamp="20190626 19:18:55.372" level="INFO">Clicking element 'id=forgotPasswordDialog'.</msg>
+<status status="PASS" endtime="20190626 19:18:55.467" starttime="20190626 19:18:55.372"></status>
 </kw>
-<status status="PASS" endtime="20190626 19:05:24.387" starttime="20190626 19:05:21.481"></status>
+<status status="PASS" endtime="20190626 19:18:55.467" starttime="20190626 19:18:54.874"></status>
 </kw>
-<kw name="Social Media Buttons Should Displayed">
-<kw name="Element Should Be Visible" library="SeleniumLibrary">
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<arguments>
-<arg>id=fb</arg>
-</arguments>
-<msg timestamp="20190626 19:05:24.431" level="INFO">Element 'id=fb' is displayed.</msg>
-<status status="PASS" endtime="20190626 19:05:24.431" starttime="20190626 19:05:24.387"></status>
-</kw>
-<kw name="Element Should Be Visible" library="SeleniumLibrary">
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<arguments>
-<arg>id=ggl</arg>
-</arguments>
-<msg timestamp="20190626 19:05:24.465" level="INFO">Element 'id=ggl' is displayed.</msg>
-<status status="PASS" endtime="20190626 19:05:24.466" starttime="20190626 19:05:24.431"></status>
-</kw>
-<status status="PASS" endtime="20190626 19:05:24.466" starttime="20190626 19:05:24.387"></status>
+<kw name="Social Media Buttons Should Displayed*/">
+<msg timestamp="20190626 19:18:55.476" level="FAIL">No keyword with name 'Social Media Buttons Should Displayed*/' found. Did you mean:
+    Social Media Buttons Should Displayed</msg>
+<status status="FAIL" endtime="20190626 19:18:55.476" starttime="20190626 19:18:55.476"></status>
 </kw>
 <tags>
 <tag>regression</tag>
 </tags>
-<status status="PASS" endtime="20190626 19:05:24.466" critical="yes" starttime="20190626 19:05:10.907"></status>
+<status status="FAIL" endtime="20190626 19:18:55.476" critical="yes" starttime="20190626 19:18:43.908">No keyword with name 'Social Media Buttons Should Displayed*/' found. Did you mean:
+    Social Media Buttons Should Displayed</status>
 </test>
 <test id="s1-t2" name="Verify Login Functionality">
 <kw name="Valid Login">
@@ -130,34 +117,157 @@
 <arg>id=inputEmail1</arg>
 <arg>${USERNAME}</arg>
 </arguments>
-<msg timestamp="20190626 19:05:24.469" level="INFO">Typing text 'hannoj@gmail.com' into text field 'id=inputEmail1'.</msg>
+<msg timestamp="20190626 19:18:55.480" level="INFO">Typing text 'hannoj@gmail.com' into text field 'id=inputEmail1'.</msg>
+<status status="PASS" endtime="20190626 19:18:56.200" starttime="20190626 19:18:55.479"></status>
+</kw>
+<status status="PASS" endtime="20190626 19:18:56.200" starttime="20190626 19:18:55.479"></status>
+</kw>
+<kw name="Input Password">
+<arguments>
+<arg>testing123</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=inputPassword1</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20190626 19:18:56.201" level="INFO">Typing text 'testing123' into text field 'id=inputPassword1'.</msg>
+<status status="PASS" endtime="20190626 19:18:56.337" starttime="20190626 19:18:56.201"></status>
+</kw>
+<status status="PASS" endtime="20190626 19:18:56.338" starttime="20190626 19:18:56.200"></status>
+</kw>
+<kw name="Click Login Button">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css=input[type="submit"]</arg>
+</arguments>
+<msg timestamp="20190626 19:18:56.339" level="INFO">Clicking element 'css=input[type="submit"]'.</msg>
+<status status="PASS" endtime="20190626 19:18:58.629" starttime="20190626 19:18:56.338"></status>
+</kw>
+<status status="PASS" endtime="20190626 19:18:58.629" starttime="20190626 19:18:56.338"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>css=li.nav-welcome</arg>
+</arguments>
+<msg timestamp="20190626 19:18:58.668" level="INFO">Element 'css=li.nav-welcome' is displayed.</msg>
+<status status="PASS" endtime="20190626 19:18:58.668" starttime="20190626 19:18:58.629"></status>
+</kw>
+<kw name="Logout To Website">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css=.nav-welcome a[href="https://dv01.travelbook.ph/users/logout/"]</arg>
+</arguments>
+<msg timestamp="20190626 19:18:58.669" level="INFO">Clicking element 'css=.nav-welcome a[href="https://dv01.travelbook.ph/users/logout/"]'.</msg>
+<status status="PASS" endtime="20190626 19:19:04.746" starttime="20190626 19:18:58.668"></status>
+</kw>
+<status status="PASS" endtime="20190626 19:19:04.747" starttime="20190626 19:18:58.668"></status>
+</kw>
+<status status="PASS" endtime="20190626 19:19:04.747" starttime="20190626 19:18:55.478"></status>
+</kw>
+<kw name="Error Message Should Be Displayed on Invalid Login">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>https://dv01.travelbook.ph/users/login/</arg>
+</arguments>
+<msg timestamp="20190626 19:19:04.748" level="INFO">Opening url 'https://dv01.travelbook.ph/users/login/'</msg>
+<status status="PASS" endtime="20190626 19:19:06.141" starttime="20190626 19:19:04.748"></status>
+</kw>
+<kw name="Input Email">
+<arguments>
+<arg>invalidusername@gmail.com</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=inputEmail1</arg>
+<arg>${USERNAME}</arg>
+</arguments>
+<msg timestamp="20190626 19:19:06.143" level="INFO">Typing text 'invalidusername@gmail.com' into text field 'id=inputEmail1'.</msg>
+<status status="PASS" endtime="20190626 19:19:06.328" starttime="20190626 19:19:06.142"></status>
+</kw>
+<status status="PASS" endtime="20190626 19:19:06.329" starttime="20190626 19:19:06.141"></status>
+</kw>
+<kw name="Input Password">
+<arguments>
+<arg>invalidPassword</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=inputPassword1</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20190626 19:19:06.330" level="INFO">Typing text 'invalidPassword' into text field 'id=inputPassword1'.</msg>
+<status status="PASS" endtime="20190626 19:19:06.465" starttime="20190626 19:19:06.329"></status>
+</kw>
+<status status="PASS" endtime="20190626 19:19:06.466" starttime="20190626 19:19:06.329"></status>
+</kw>
+<kw name="Click Login Button">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css=input[type="submit"]</arg>
+</arguments>
+<msg timestamp="20190626 19:19:06.467" level="INFO">Clicking element 'css=input[type="submit"]'.</msg>
+<status status="PASS" endtime="20190626 19:19:07.877" starttime="20190626 19:19:06.466"></status>
+</kw>
+<status status="PASS" endtime="20190626 19:19:07.878" starttime="20190626 19:19:06.466"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Element Should Be Visible</arg>
+<arg>css=.errorMessage1</arg>
+</arguments>
+<assign>
+<var>${status}</var>
+<var>${value}</var>
+</assign>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>css=.errorMessage1</arg>
+</arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190626 19:05:24.853" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190626 19:05:24.854" starttime="20190626 19:05:24.547"></status>
+<msg timestamp="20190626 19:19:08.169" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190626 19:19:08.169" starttime="20190626 19:19:07.895"></status>
 </kw>
-<msg timestamp="20190626 19:05:24.870" level="FAIL">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=75.0.3770.100)
-</msg>
-<status status="FAIL" endtime="20190626 19:05:24.870" starttime="20190626 19:05:24.468"></status>
+<msg timestamp="20190626 19:19:08.182" level="FAIL">Element with locator 'css=.errorMessage1' not found.</msg>
+<status status="FAIL" endtime="20190626 19:19:08.182" starttime="20190626 19:19:07.879"></status>
 </kw>
-<status status="FAIL" endtime="20190626 19:05:24.870" starttime="20190626 19:05:24.468"></status>
+<msg timestamp="20190626 19:19:08.182" level="INFO">${status} = FAIL</msg>
+<msg timestamp="20190626 19:19:08.182" level="INFO">${value} = Element with locator 'css=.errorMessage1' not found.</msg>
+<status status="PASS" endtime="20190626 19:19:08.182" starttime="20190626 19:19:07.878"></status>
 </kw>
-<status status="FAIL" endtime="20190626 19:05:24.871" starttime="20190626 19:05:24.468"></status>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>css=.errorMessage div</arg>
+<arg>Not recognized. Email address or password is incorrect.</arg>
+</arguments>
+<msg timestamp="20190626 19:19:08.183" level="INFO">Verifying element 'css=.errorMessage div' contains exact text 'Not recognized. Email address or password is incorrect.'.</msg>
+<status status="PASS" endtime="20190626 19:19:08.251" starttime="20190626 19:19:08.183"></status>
+</kw>
+<status status="PASS" endtime="20190626 19:19:08.252" starttime="20190626 19:19:04.747"></status>
 </kw>
 <kw type="teardown" name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20190626 19:05:27.876" starttime="20190626 19:05:24.871"></status>
+<status status="PASS" endtime="20190626 19:19:11.206" starttime="20190626 19:19:08.252"></status>
 </kw>
 <tags>
 <tag>login</tag>
 <tag>smoke regression</tag>
 </tags>
-<status status="FAIL" endtime="20190626 19:05:27.876" critical="yes" starttime="20190626 19:05:24.467">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=75.0.3770.100)
-</status>
+<status status="PASS" endtime="20190626 19:19:11.206" critical="yes" starttime="20190626 19:18:55.477"></status>
 </test>
-<status status="FAIL" endtime="20190626 19:05:27.878" starttime="20190626 19:05:09.155"></status>
+<status status="FAIL" endtime="20190626 19:19:11.209" starttime="20190626 19:18:42.063"></status>
 </suite>
 <statistics>
 <total>
@@ -165,9 +275,9 @@
 <stat fail="1" pass="1">All Tests</stat>
 </total>
 <tag>
-<stat fail="1" pass="0">login</stat>
-<stat fail="0" pass="1">regression</stat>
-<stat fail="1" pass="0">smoke regression</stat>
+<stat fail="0" pass="1">login</stat>
+<stat fail="1" pass="0">regression</stat>
+<stat fail="0" pass="1">smoke regression</stat>
 </tag>
 <suite>
 <stat fail="1" id="s1" name="Login" pass="1">Login</stat>
