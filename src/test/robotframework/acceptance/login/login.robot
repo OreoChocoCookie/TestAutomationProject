@@ -5,7 +5,7 @@ Resource          login-resources.robot
 *** Test Cases ***
 Verify Login UI
     [Tags]  regression
-    Open Browser To Login Page - test
+    Open Browser To Login Page
     Email and Password Text Fields Should Be Displayed
     Login Button Should Be Displayed
     Forgot Password Link Should Be Displayed
