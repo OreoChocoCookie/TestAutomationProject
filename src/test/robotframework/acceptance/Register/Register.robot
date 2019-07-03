@@ -39,7 +39,7 @@ Valid Email Registration
    ${enteredEmail2}     Get Text     css=.jiw-label strong
    should be equal  ${enteredEmail}     ${enteredEmail2}
    Element Should Be Visible    css=.form-group input:nth-child(2)
-   Element Should Be Visible    css=.form-group inputgit :nth-child(5)
+   Element Should Be Visible    css=.form-group input:nth-child(5)
    Element Should Be Visible    css=.orange-btn
    Input Password   css=.form-group input:nth-child(2)      hellotb123
    Input Password   css=.form-group input:nth-child(5)      hellotb123
