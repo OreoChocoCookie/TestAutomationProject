@@ -31,7 +31,7 @@ Valid Email Registration
    Close Browser
    Switch Browser   ${firstBrowserIndex}
    Maximize Browser Window
-   ${stripValidationCode}   strip string  ${SPACE}${validationCode}
+   ${stripValidationCode}   Strip String  ${SPACE}${validationCode}
    Input Text   id=inputVerificationCode    ${stripValidationCode}
    Click Element    css=input[value='Submit']
    Element Should Be Visible    css=.jiw-ch-pw-indent label:nth-child(3)
@@ -41,9 +41,9 @@ Valid Email Registration
    Element Should Be Visible    css=.form-group input:nth-child(2)
    Element Should Be Visible    css=.form-group input:nth-child(5)
    Element Should Be Visible    css=.orange-btn
-   Input Password   css=.form-group input:nth-child(2)      hellotb123
-   Input Password   css=.form-group input:nth-child(5)      hellotb123
-   Click Element    css=.orange-btn
+   Input Password   css=input[name='frPasswd']      hellotb123
+   Input Password   css=input[name='frPasswdRepeat']      hellotb123
+   Click Element    xpath://*[contains(text(),"Create Password")]
    ${emailName}    fetch from left    ${enteredEmail2}   @mailinator.com
    Element Should be Visible     css=div.main-header a[href="https://dv01.travelbook.ph/account/users/manage_bookings/"]
    ${welcomeEmail}   Get Text    css=div.main-header a[href="https://dv01.travelbook.ph/account/users/manage_bookings/"]
