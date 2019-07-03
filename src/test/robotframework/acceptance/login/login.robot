@@ -1,5 +1,6 @@
 *** Settings ***
 Library           SeleniumLibrary
+Resource          ../src/resources/locators.robot
 Resource          login-resources.robot
 
 *** Test Cases ***
