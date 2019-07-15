@@ -1,8 +1,9 @@
-.idea
-*.iml
-target
-.DS_Store
-*.png
+.idea/
+README.md
 report.html
-log.html
 output.xml
+Makefile
+*.png
+log.html
+debug.log
+pybot

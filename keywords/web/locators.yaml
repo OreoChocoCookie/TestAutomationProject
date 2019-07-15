@@ -1,0 +1,24 @@
+#login page
+login_email_field: id=inputEmail1
+login_password_field: id=inputPassword1
+login_button: css=input[type="submit"]
+login_fb: id=fb
+login_google: id=ggl
+login_google_img: css=div[id=ggl] img
+login_link:  css=.header-login-section a
+login_forgot_password_link: css=a[data-target="#forgotPasswordDialog"]
+login_nav_welcome: css=li.nav-welcome
+login_rememberme_checkbox: css=.login-register-wrapper input[type='checkbox']
+
+#login gmail page
+gmail_email_field: css=input[type='email']
+gmail_pword_field: css=input[type='password']
+gmail_email_next_cta: id=identifierNext
+gmail_password_next_cta: id=passwordNext
+
+#logout
+logout_link: xpath=//a[contains(text(),'here')]
+
+#forgot password
+forgot_password_iframe: id=forgotPasswordContent
+forgot_password_modal: id=forgotPasswordDialog
