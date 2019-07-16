@@ -27,3 +27,7 @@ Clear Browser Cookies
 Open Travelbook Web And Maximize Window
     Open Browser    ${web}    chrome
     Maximize Browser Window
+
+Go To Page
+	[Arguments]     ${page}
+	Go To   ${web}/${page}

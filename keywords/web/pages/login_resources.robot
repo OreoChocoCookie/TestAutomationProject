@@ -12,9 +12,6 @@ Login To Website
 Logout To Website
 	Click Element       ${logout_link}
 
-Go To Page
-	[Arguments]     ${page}
-	Go To   ${web}/${page}
 
 Input Email
 	[Arguments]   ${USERNAME}
@@ -27,3 +24,9 @@ Input Password
 Click Login Button
 	Click Element   ${login_button}
 
+Go To Login Page
+    Go To Page      users/login
+
+Login Setup
+    Open Travelbook Web And Maximize Window
+    Go To Login Page

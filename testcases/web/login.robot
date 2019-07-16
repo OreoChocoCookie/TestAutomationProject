@@ -1,12 +1,12 @@
 *** Settings ***
 Documentation     Test Travelbook Login Funtionalities
 Resource          ../../resources/imports.robot
-Test Setup      Open Travelbook Web And Maximize Window
-
+Test Setup        Login Setup
+Test Teardown     Close Browser
 
 *** Test Cases ***
 Verify Login UI
-   [Tags]  smoke regression  login
+   [Tags]  smoke regression  login login-ui
    Go To Login Page
    Email and Password Text Fields Should Be Displayed
    Login Button Should Be Displayed
@@ -14,22 +14,19 @@ Verify Login UI
    Remember Me Checkbox Should Be Displayed
    Social Media Buttons Should Displayed
 
+
 Verify Login Functionality
-   [Tags]  smoke regression  login
+   [Tags]  smoke regression  login  valid-login
    Error Message Should Be Displayed on Invalid Login
    A Valid Account Can Login To Website     ${TESTUSER}      ${PASSWORD}
    User Can Login Using Google Account
-   [Teardown]     Close Browser
 
 
 *** Keywords ***
-Go To Login Page
-    Go To Page      users/login
-
 User Can Login Using Google Account
     Clear Browser Cookies
-    Go To       ${web}/users/login
-    Sleep  5s
+    Go To Page       /users/login
+    Wait Until Element Is Visible    ${login_google_img}
     Click Element       ${login_google_img}
     Select Window       NEW
     Enter Google Account Credentials         ${TEST_GMAIL}      ${TESTGMAIL_PASSWORD}
@@ -44,6 +41,7 @@ Enter Google Account Credentials
     Wait Until Element Is Visible    ${gmail_pword_field}
     Input Text          ${gmail_pword_field}      ${gmail_password}
     Click Element       ${gmail_password_next_cta}
+
 
 
 Remember Me Checkbox Should Be Displayed
