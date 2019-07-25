@@ -21,7 +21,7 @@ Click Register Button
     Click Element       ${register_button}
 
 Entered Email Should Be Displayed
-    Element Should Be Visible       ${registered_email_container}
+    Element Should Be Visigit sble       ${registered_email_container}
 
 Displayed Email Should Be Correct
     ${entered_email}    Get Text        ${registered_email}
