@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation    Suite description
+Resource          ../../resources/imports.robot
 Library     SeleniumLibrary
 Library     String
 Library     BuiltIn
@@ -62,13 +63,20 @@ No Email Entered
    Element Should Be Visible    css=.errorMessage
    [Teardown]  Close Browser
 
+Test Registration using keywords
+    [Tags]  keyword
+    Open Travelbook Web And Maximize Window
+    Go To Page  users/register
+    Enter Email To Be Registered
+    Double Click Checkbox
+    Click Register Button
+    Entered Email Should Be Displayed
+    Displayed Email Should Be Correct
+
+
 *** Keywords ***
 
-Generate Email
-    [Arguments]     ${length}
-    ${randomstring}   Generate Random String  ${length}   [LETTERS]
-    ${email}    Catenate    	SEPARATOR=   ${randomstring}   @mailinator.com
-    [Return]    ${email}    ${randomstring}
+
 
 
 

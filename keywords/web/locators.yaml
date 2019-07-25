@@ -22,3 +22,10 @@ logout_link: xpath=//a[contains(text(),'here')]
 #forgot password
 forgot_password_iframe: id=forgotPasswordContent
 forgot_password_modal: id=forgotPasswordDialog
+
+#user registration
+register_email_field: id=inputEmail1
+register_termsandconditions_checkbox:  id=termsAndConditions
+register_button:  css=input[value='Register']
+registered_email_container:   id=jiw-validation-div
+registered_email:   css=.jiw-validation-indent strong
