@@ -28,4 +28,6 @@ register_email_field: id=inputEmail1
 register_termsandconditions_checkbox:  id=termsAndConditions
 register_button:  css=input[value='Register']
 registered_email_container:   id=jiw-validation-div
-registered_email:   css=.jiw-validation-indent strong
+registered_email_text:   css=.jiw-validation-indent strong
+authentication_email_tab: css=tr[ng-repeat='email in emails']
+mail_body_iframe:   id=msg_body

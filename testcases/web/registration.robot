@@ -66,12 +66,11 @@ No Email Entered
 Test Registration using keywords
     [Tags]  keyword
     Open Travelbook Web And Maximize Window
-    Go To Page  users/register
-    Enter Email To Be Registered
-    Double Click Checkbox
-    Click Register Button
-    Entered Email Should Be Displayed
-    Displayed Email Should Be Correct
+    ${email}        Entered Email Should Be Displayed
+    Displayed Email Should Be Correct       ${email}
+    Authentication Code Should Be Sent
+    ${stripValidationCode}       Get Authentication Code
+    Authentication Code Should Be Accepted      ${stripValidationCode}
 
 
 *** Keywords ***
