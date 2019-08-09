@@ -31,3 +31,16 @@ registered_email_container:   id=jiw-validation-div
 registered_email_text:   css=.jiw-validation-indent strong
 authentication_email_tab: css=tr[ng-repeat='email in emails']
 mail_body_iframe:   id=msg_body
+email_authentication_code:  css=tbody tr:nth-child(3)
+authentication_code_field: id=inputVerificationCode
+submit_authentication_code_button:  css=input[value='Submit']
+new_password_email_text:  css=.jiw-label  strong
+new_password_label_header:  css=jiw-header
+new_password_field: css=input[name='frPasswd']
+repeat_password_field:  css=input[name='frPasswdRepeat']
+create_password_button: css=a[onclick="doconfirm('')"]
+register_user_tab:  css=.nav-tabs .active
+registration_error_message:  css=.errorMessage
+
+#landing page logged in
+email_text_link:  css=div.main-header a[href="https://dv01.travelbook.ph/account/users/manage_bookings/"]

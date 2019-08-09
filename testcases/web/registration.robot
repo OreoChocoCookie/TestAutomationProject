@@ -6,7 +6,6 @@ Library     String
 Library     BuiltIn
 
 *** Variables ***
-${useremail}    tbtest03@gmail.com
 *** Test Cases ***
 Valid Email Registration
     [Tags]    positive
@@ -63,14 +62,55 @@ No Email Entered
    Element Should Be Visible    css=.errorMessage
    [Teardown]  Close Browser
 
-Test Registration using keywords
-    [Tags]  keyword
+User Registration Using Authentication Code From Email
+    [Tags]  code
     Open Travelbook Web And Maximize Window
     ${email}        Entered Email Should Be Displayed
     Displayed Email Should Be Correct       ${email}
-    Authentication Code Should Be Sent
-    ${stripValidationCode}       Get Authentication Code
-    Authentication Code Should Be Accepted      ${stripValidationCode}
+    Authentication Email Should Be Sent
+    Authentication Code Should Be Displayed
+    Authentication Code Should Be Accepted
+    Password Setting Fields Should Be Displayed
+    New Password Should Be Created
+    Should Go To Landing Page In Logged In Status
+
+User Registration Using Authentication Link From Email
+    [Tags]  link
+    Open Travelbook Web And Maximize Window
+    ${email}        Entered Email Should Be Displayed
+    Displayed Email Should Be Correct       ${email}
+    Authentication Email Should Be Sent
+    User Should Be Authenticated Using Link
+    Password Setting Fields Should Be Displayed
+    New Password Should Be Created
+    Should Go To Landing Page In Logged In Status
+
+User Registration With No Email Entered
+    [Tags]  noemailentered
+    Open Travelbook Web And Maximize Window
+    Go To User Registration Page
+    User Registration Fields Should Be Visible
+    Click Register Button
+    Registration Error Message Should Be Displayed
+    Close Browser
+
+User Registration Using Registered Email
+    [Tags]  registeredemail
+    Open Travelbook Web And Maximize Window
+    Go To User Registration Page
+    User Registration Fields Should Be Visible
+    Registered Email Should Not Be Accepted
+    Registration Error Message Should Be Displayed
+    Close Browser
+
+User Registration Using Invalid Email
+    [Tags]  invalidemail
+    Open Travelbook Web And Maximize Window
+    Go To User Registration Page
+    User Registration Fields Should Be Visible
+    Invalid Email Format Should Not Be Accepted
+    Registration Error Message Should Be Displayed
+
 
 
 *** Keywords ***
