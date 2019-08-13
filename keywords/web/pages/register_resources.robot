@@ -106,3 +106,6 @@ Invalid Email Format Should Not Be Accepted
     Input Text      ${register_email_field}     travelbooktest675@
     Double Click Checkbox
     Click Element       ${register_button}
+
+User Should Not Be Able To Proceed To User Authentication
+    User Registration Fields Should Be Visible
